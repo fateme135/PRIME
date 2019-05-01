@@ -68,25 +68,42 @@
 // search();
 //////////////////////////////////////project6-1///////////////////////////////
 //description: reserve a number 
-let num = 0;
-let num2 = 0;
-function reversenumber(arg) {
-  while (arg > 0) {
-    num = arg % 10;
-    arg = Math.floor(arg / 10);
-    num2 = num2 * 10 + num;
+// let num = 0;
+// let num2 = 0;
+// function reversenumber(arg) {
+//   while (arg > 0) {
+//     num = arg % 10;
+//     arg = Math.floor(arg / 10);
+//     num2 = num2 * 10 + num;
+//   }
+//   return num2
+// }
+// console.log(reversenumber(prompt("PLEASE ENTER ONE NUMBER")));
+// //////////////////////////////////////project6-2///////////////////////////////
+// //description: reserve a string
+// function baraxkardanad() {
+//   let kalame = prompt("enter your num");
+//   let v = "";
+//   for (let i = kalame.length; i > -1; i--) {
+//     v += kalame.charAt(i)
+//   }
+//   console.log(Number(v));
+// }
+// baraxkardanad();
+/////////////////////////////////////project7////////////////////////////////////
+//description: longest word in a string
+function bozorgtarinkalame() {
+  let voroodi = prompt("enter your sentence :")
+  let joda = voroodi.split(" ");
+
+  let defult = 0;
+  let kalame = "";
+  for (let i = 0; i < joda.length; i++) {
+    if (joda[i].length > defult) {
+      defult = joda[i].length;
+      kalame = joda[i];
+    }
   }
-  return num2
+  console.log(kalame);
 }
-console.log(reversenumber(prompt("PLEASE ENTER ONE NUMBER")));
-//////////////////////////////////////project6-2///////////////////////////////
-//description: reserve a string
-function baraxkardanad() {
-  let kalame = prompt("enter your num");
-  let v = "";
-  for (let i = kalame.length; i > -1; i--) {
-    v += kalame.charAt(i)
-  }
-  console.log(Number(v));
-}
-baraxkardanad();
+bozorgtarinkalame();
