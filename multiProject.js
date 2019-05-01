@@ -127,8 +127,8 @@
 //// description :bubble sort
 let arr = [3, 4, 12, 5, 1, 2, 12, 76]
 let defult = 0;
-for (let i = 0; i < arr.length-1; i++) {
-  for (let j = 0; j < arr.length - i-1; j++) {
+for (let i = 0; i < arr.length - 1; i++) {
+  for (let j = 0; j < arr.length - i - 1; j++) {
     if (arr[j] > arr[j + 1]) {
       defult = arr[j];
       arr[j] = arr[j + 1];
@@ -137,3 +137,21 @@ for (let i = 0; i < arr.length-1; i++) {
   }
 }
 console.log(arr);
+///////////////////////////////////////project10///////////////////////////////////
+//// description :Depth of an array
+let arr = [1, [1, 2], 3, [4, 5, [6]]];
+let counter = 1;
+let counter2 = 1;
+function dethrecursive(arg) {
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof (arg[i]) === "object") {
+      ++counter;
+      dethrecursive(arg[i]);
+    }
+    if (counter > counter2) {
+      counter2 = counter;
+    }
+  }
+  return counter2;
+}
+console.log(dethrecursive(arr));
