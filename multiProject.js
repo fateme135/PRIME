@@ -18,3 +18,18 @@ function addAvalyabTaAdadMoredenazar(arg) {
 }
 console.log(addAvalyabTaAdadMoredenazar(prompt("PLEASE ENTER NUMBER ")));
 //////////////////////////////////////project 2////////////////////////////////
+//description: Three letter in the middle.//
+let str = prompt("please enter your string ")
+
+function findmiddle(arg) {
+  if (arg.length <= 3) {
+    console.log(" your word is than less 3")
+  }
+  if (arg.length % 2 === 0) {
+    console.log(" your word is EVEN")
+  }
+  if (arg.length % 2 === 1) {
+    console.log(arg.charAt(Math.floor(arg.length / 2 - 1)) + arg.charAt(arg.length / 2) + arg.charAt(arg.length / 2 + 1));
+  }
+}
+console.log(findmiddle(str));
