@@ -18,7 +18,7 @@ function addAvalyabTaAdadMoredenazar(arg) {
 }
 console.log(addAvalyabTaAdadMoredenazar(prompt("PLEASE ENTER NUMBER ")));
 //////////////////////////////////////project 2////////////////////////////////
-//description: Three letter in the middle.//
+//description: Three letters in the middle.//
 let str = prompt("please enter your string ")
 
 function findmiddle(arg) {
@@ -33,3 +33,12 @@ function findmiddle(arg) {
   }
 }
 console.log(findmiddle(str));
+//////////////////////////////////////project3//////////////////////////////////
+//description:sort members of array .//
+function sorti1(resu) {
+  let arraysortshode = resu.sort(function (a, b) { return b.length - a.length });
+  return arraysortshode;
+}
+let point = ["sara", "farid", "reza", "arshida", "ali", "fateme"];
+console.log(sorti1(point));
+
