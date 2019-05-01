@@ -108,18 +108,32 @@
 // }
 // bozorgtarinkalame();
 // ///////////////////////////////////project8////////////////////////////////////
-// description :mirror
-function qarineyabi() {
-  let word = prompt("enter your word:");
+//// description :mirror
+// function qarineyabi() {
+//   let word = prompt("enter your word:");
 
-  for (let i = 0; i < word.length / 2; i++) {
-    if (word[i] == word[word.length - i - 1]) {
-      continue;
+//   for (let i = 0; i < word.length / 2; i++) {
+//     if (word[i] == word[word.length - i - 1]) {
+//       continue;
+//     }
+//     else
+//       return (" qarine nist ");
+//   }
+//   return (" qarine ast ");
+
+// }
+// console.log(qarineyabi());
+///////////////////////////////////////project9///////////////////////////////////
+//// description :bubble sort
+let arr = [3, 4, 12, 5, 1, 2, 12, 76]
+let defult = 0;
+for (let i = 0; i < arr.length-1; i++) {
+  for (let j = 0; j < arr.length - i-1; j++) {
+    if (arr[j] > arr[j + 1]) {
+      defult = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = defult;
     }
-    else
-      return (" qarine nist ");
   }
-  return (" qarine ast ");
-
 }
-console.log(qarineyabi());
+console.log(arr);
