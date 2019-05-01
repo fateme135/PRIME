@@ -41,4 +41,16 @@ function sorti1(resu) {
 }
 let point = ["sara", "farid", "reza", "arshida", "ali", "fateme"];
 console.log(sorti1(point));
+//////////////////////////////////////project4///////////////////////////////
+//description : first of letter of string be capitalize//
+function capitalize(str) {
+  var arrayasli = str.split(' ');
+  var array = [];
+  for (var i = 0; i < arrayasli.length; i++) {
+    array.push(arrayasli[i].charAt(0).toUpperCase() + arrayasli[i].slice(1).toLowerCase());
+  }
+  return array.join(' ');
+}
+console.log(capitalize(prompt(" ENTER YOUR SENTENCE...")));
+
 
