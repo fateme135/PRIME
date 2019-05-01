@@ -53,16 +53,40 @@
 // }
 // console.log(capitalize(prompt(" ENTER YOUR SENTENCE...")));
 //////////////////////////////////////project5///////////////////////////////
-//description : delete vowels letters//
-function search() {
-  let str = prompt("enter a string:");
-  let kalame = "";
-  for (let i = 0; i < str.length; i++) {
-    if (str.charAt(i) !== "a" && str.charAt(i) !== "i" && str.charAt(i) !== "u"
-      && str.charAt(i) !== "e" && str.charAt(i) !== "o") {
-      kalame += str.charAt(i);
-    }
+////description : delete vowels letters//
+// function search() {
+//   let str = prompt("enter a string:");
+//   let kalame = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if (str.charAt(i) !== "a" && str.charAt(i) !== "i" && str.charAt(i) !== "u"
+//       && str.charAt(i) !== "e" && str.charAt(i) !== "o") {
+//       kalame += str.charAt(i);
+//     }
+//   }
+//   document.write(kalame);
+// }
+// search();
+//////////////////////////////////////project6-1///////////////////////////////
+//description: reserve a number 
+let num = 0;
+let num2 = 0;
+function reversenumber(arg) {
+  while (arg > 0) {
+    num = arg % 10;
+    arg = Math.floor(arg / 10);
+    num2 = num2 * 10 + num;
   }
-  document.write(kalame);
+  return num2
 }
-search();
+console.log(reversenumber(prompt("PLEASE ENTER ONE NUMBER")));
+//////////////////////////////////////project6-2///////////////////////////////
+//description: reserve a string
+function baraxkardanad() {
+  let kalame = prompt("enter your num");
+  let v = "";
+  for (let i = kalame.length; i > -1; i--) {
+    v += kalame.charAt(i)
+  }
+  console.log(Number(v));
+}
+baraxkardanad();
