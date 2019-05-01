@@ -52,8 +52,8 @@
 //   return array.join(' ');
 // }
 // console.log(capitalize(prompt(" ENTER YOUR SENTENCE...")));
-//////////////////////////////////////project5///////////////////////////////
-////description : delete vowels letters//
+// ////////////////////////////////////project5///////////////////////////////
+// //description : delete vowels letters//
 // function search() {
 //   let str = prompt("enter a string:");
 //   let kalame = "";
@@ -66,8 +66,8 @@
 //   document.write(kalame);
 // }
 // search();
-//////////////////////////////////////project6-1///////////////////////////////
-//description: reserve a number 
+// ////////////////////////////////////project6-1///////////////////////////////
+// //description: reserve a number 
 // let num = 0;
 // let num2 = 0;
 // function reversenumber(arg) {
@@ -90,20 +90,36 @@
 //   console.log(Number(v));
 // }
 // baraxkardanad();
-/////////////////////////////////////project7////////////////////////////////////
-//description: longest word in a string
-function bozorgtarinkalame() {
-  let voroodi = prompt("enter your sentence :")
-  let joda = voroodi.split(" ");
+// ///////////////////////////////////project7////////////////////////////////////
+// //description: longest word in a string
+// function bozorgtarinkalame() {
+//   let voroodi = prompt("enter your sentence :")
+//   let joda = voroodi.split(" ");
 
-  let defult = 0;
-  let kalame = "";
-  for (let i = 0; i < joda.length; i++) {
-    if (joda[i].length > defult) {
-      defult = joda[i].length;
-      kalame = joda[i];
+//   let defult = 0;
+//   let kalame = "";
+//   for (let i = 0; i < joda.length; i++) {
+//     if (joda[i].length > defult) {
+//       defult = joda[i].length;
+//       kalame = joda[i];
+//     }
+//   }
+//   console.log(kalame);
+// }
+// bozorgtarinkalame();
+// ///////////////////////////////////project8////////////////////////////////////
+// description :mirror
+function qarineyabi() {
+  let word = prompt("enter your word:");
+
+  for (let i = 0; i < word.length / 2; i++) {
+    if (word[i] == word[word.length - i - 1]) {
+      continue;
     }
+    else
+      return (" qarine nist ");
   }
-  console.log(kalame);
+  return (" qarine ast ");
+
 }
-bozorgtarinkalame();
+console.log(qarineyabi());
